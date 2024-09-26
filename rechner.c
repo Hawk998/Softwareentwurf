@@ -71,7 +71,6 @@ int main() {
 
     // Endergebnis vom Stapel holen und ausgeben
     if (isStackEmpty(&stack) != 1) {
-        printStack(&stack);
         int result = pop(&stack);
         if (isStackEmpty(&stack) == 1) {
             printf("Das Ergebnis ist: %d\n", result);
