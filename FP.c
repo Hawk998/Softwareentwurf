@@ -66,7 +66,7 @@ void freeStack(FP *stack) {
 
 // Ersetzt das angegebene Stapelelement
 int replace(FP *stack, int i, int x) {
-    if (i < stackLength(stack) - 1)
+    if (i <= stackLength(stack) - 1)
     {
         stack->items[i] = x;
         return 1;
