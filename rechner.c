@@ -59,7 +59,7 @@ int main() {
     char t[100];  // Buffer zum Einlesen der Zeichenkette
     printf("Geben Sie einen Ausdruck in Postfix-Notation ein (z.B. '3 4 * 2 +'): ");
     
-    while (scanf("%s", t) != EOF) {
+    /*while (scanf("%s", t) != EOF) {
         if (istOperator(t)) {
             auswert(t, &stack);
         } else {
@@ -67,7 +67,21 @@ int main() {
             push(&stack, num);          // Zahl auf den Stapel legen
             
         }
+    }*/
+    if (fgets(t, sizeof(t), stdin) != NULL) {
+    t[strcspn(t, "\n")] = 0;  // Zeilenumbruch entfernen
+    char *token = strtok(t, " ");
+        while (token != NULL) {
+            if (istOperator(token)) {
+                auswert(token, &stack);
+            } else {
+                int num = atoi(token);  // Umwandlung der Zeichenkette in eine Zahl
+                push(&stack, num);          // Zahl auf den Stapel legen
+            }
+            token = strtok(NULL, " ");
+        }
     }
+
 
     // Endergebnis vom Stapel holen und ausgeben
     if (isStackEmpty(&stack) != 1) {
