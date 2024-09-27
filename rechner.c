@@ -65,11 +65,10 @@ int main() {
         while (token != NULL) {
             if (istOperator(token)) {
                 auswert(token, &stack);
-				if (strcmp(operator, "$") == 0){
+				if (strcmp(token, "$") == 0){
 					return 0;
 				}
-            } 
-			else {
+            } else {
                 int num = atoi(token);  // Umwandlung der Zeichenkette in eine Zahl
                 push(&stack, num);          // Zahl auf den Stapel legen
             }
