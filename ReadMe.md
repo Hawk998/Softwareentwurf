@@ -23,3 +23,29 @@ Das Programm erwartet vom Benutzer einen Ausdruck in der Postfix-Notation, z.B.:
 
 ```bash
 3 4 * 2 +
+Das Ergebnis ist: 14
+
+## Stapelfunktionen
+
+Die Datei `stacktest.c` dient zur Überprüfung der Stapelfunktionen. Sie führt verschiedene Stapeloperationen wie `Push`, `Pop`, `Replace` und `Peek` durch und gibt den aktuellen Zustand des Stapels aus.
+
+### Übersicht der Stapeloperationen:
+
+- **Push**: Fügt ein Element oben auf den Stapel.
+- **Pop**: Entfernt das oberste Element vom Stapel und gibt es zurück.
+- **Peek**: Gibt das oberste Element zurück, ohne es zu entfernen.
+- **Replace**: Ersetzt ein bestimmtes Element auf dem Stapel durch einen neuen Wert.
+- **PrintStack**: Gibt den gesamten Stapel aus.
+
+## Speicherverwaltung
+
+Die `freeStack()`-Funktion stellt sicher, dass der für den Stapel reservierte Speicher nach Beendigung des Programms freigegeben wird.
+
+## Anforderungen
+
+- C Compiler (z.B. `gcc`)
+- Terminal oder IDE zum Kompilieren und Ausführen des Programms
+
+## Zusammenfassung
+
+Dieses Projekt implementiert einen einfachen Postfix-Rechner mit einer Stack-Datenstruktur in C. Es unterstützt grundlegende arithmetische Operationen und bietet eine spezielle Funktion zum Tauschen der Stapelwerte. Das `stacktest.c` Programm erlaubt es, die korrekte Funktion der Stapeloperationen zu testen.
