@@ -24,7 +24,7 @@ Das Programm erwartet vom Benutzer einen Ausdruck in der Postfix-Notation, z.B.:
 ```bash
 3 4 * 2 +
 Das Ergebnis ist: 14
-
+```
 ## Stapelfunktionen
 
 Die Datei `stacktest.c` dient zur Überprüfung der Stapelfunktionen. Sie führt verschiedene Stapeloperationen wie `Push`, `Pop`, `Replace` und `Peek` durch und gibt den aktuellen Zustand des Stapels aus.
