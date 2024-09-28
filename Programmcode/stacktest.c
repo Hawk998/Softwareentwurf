@@ -35,11 +35,8 @@ int main() {
     printStack(&stack);
 
     //Neuer Test Replace
-    printf("Stapel Replacen:");
-    //replace(&stack, 2, 5);
-    //replace(&stack, 3, 7);
+    printf("Stapel Replace Index 0 mit \"9\" \n:");
     replace(&stack, 0, 9);
-    //replace(&stack, 1, 8);
     printStack(&stack);
 
     // (9) ausgeben, ob der Stapel leer ist
