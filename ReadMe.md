@@ -29,6 +29,14 @@ Danach in den Projektordner Navigieren und das Start-Script ausführen:
 cd Softwareentwurf
 ./BuildAndStart.sh
 ```
+Linux:
+```bash
+./BuildAndStart.sh
+```
+Windows:
+```bash
+./BuildAndStart.bat
+```
 
 ### Postfix-Rechner
 
