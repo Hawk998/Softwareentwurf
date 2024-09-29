@@ -17,6 +17,19 @@ Das Projekt besteht aus folgenden Dateien:
 3. **FP.c**: Implementierung der Stack-Datenstruktur und ihrer Operationen.
 4. **stacktest.c**: Testprogramm zur Überprüfung der Stapelfunktionen (Push, Pop, Replace, etc.).
 
+### Ausführung
+
+Klonen Sie das Projekt in einen Ordner ihrer Wahl:
+```bash
+git clone https://github.com/Hawk998/Softwareentwurf.git
+```
+
+Danach in den Projektordner Navigieren und das Start-Script ausführen:
+```bash
+cd Softwareentwurf
+./BuildAndStart.sh
+```
+
 ### Postfix-Rechner
 
 Das Programm erwartet vom Benutzer einen Ausdruck in der Postfix-Notation, z.B.:
