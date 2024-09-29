@@ -24,19 +24,13 @@ Klonen Sie das Projekt in einen Ordner ihrer Wahl:
 git clone https://github.com/Hawk998/Softwareentwurf.git
 ```
 
-Danach in den Projektordner Navigieren und das Start-Script ausführen:
+Danach in den Projektordner Navigieren und das Start-Script ausführen (für Linux-Betriebssystem):
 ```bash
 cd Softwareentwurf
 ./BuildAndStart.sh
 ```
-Linux:
-```bash
-./BuildAndStart.sh
-```
-Windows:
-```bash
-./BuildAndStart.bat
-```
+
+
 
 ### Postfix-Rechner
 
